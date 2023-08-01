@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blueBorder{
+    border: 5px solid blue;
+}
