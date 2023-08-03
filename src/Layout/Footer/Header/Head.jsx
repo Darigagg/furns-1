@@ -4,10 +4,10 @@ import {IoIosArrowDown} from "react-icons/io"
 import {AiOutlineSearch} from "react-icons/ai"
 import {CiUser} from "react-icons/ci"
 import {HiOutlineShoppingBag} from "react-icons/hi"
+import {AiOutlineMenu} from "react-icons/ai"
+import {RiSettings3Line} from "react-icons/ri"
 
 function Header() {
-
-    const [lang, setLang] = React.useState(true)
 
     return (
       <div className="Header">
@@ -18,7 +18,7 @@ function Header() {
             </div>
             <div className="mini-div-2">
             
-                <div className="mini-div-3" onClick={() => setLang(!lang)}>
+                <div className="mini-div-3">
                     <h4 className="text-2">English</h4>
                     <IoIosArrowDown className="arrow-1"/>
                 </div>
@@ -33,12 +33,15 @@ function Header() {
 
         <header className="main-div-2"> 
 
+            <AiOutlineMenu className="elem-0"/>
+
             <img src="https://furns-react.netlify.app/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=1920&q=75" alt="error" />
 
             <div className="mini-div-5">
                 <AiOutlineSearch className="elem-1"/>
                 <CiUser className="elem-2"/>
                 <HiOutlineShoppingBag className="elem-3"/>
+                <RiSettings3Line className="elem-4"/>
             </div>
 
         </header>
